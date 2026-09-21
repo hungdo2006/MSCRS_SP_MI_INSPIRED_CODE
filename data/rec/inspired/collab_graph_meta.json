@@ -1,0 +1,19 @@
+{
+  "dataset": "inspired",
+  "source_train_file": "data/rec/inspired/train_data_dbpedia.jsonl",
+  "construction": "unique entities per training conversation; every unordered pair increments co-mention count once per conversation; output is bidirectional",
+  "min_count": 2,
+  "paper_threshold_interpretation": "keep C_ij >= 2",
+  "num_train_conversations": 801,
+  "num_nonempty_conversations": 801,
+  "avg_unique_entities_per_conversation": 9.833957553058676,
+  "max_unique_entities_per_conversation": 30,
+  "all_unique_undirected_pairs_before_threshold": 28999,
+  "kept_undirected_edges": 4302,
+  "kept_directed_edges": 8604,
+  "nodes_with_at_least_one_edge": 708,
+  "max_comention_count": 171,
+  "sum_kept_comention_weights_undirected": 17747,
+  "weighted_compat_directed_edge_entries": 35494,
+  "leakage_note": "Only training split is used; validation/test are not used."
+}

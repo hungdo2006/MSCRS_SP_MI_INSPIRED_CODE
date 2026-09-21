@@ -1,0 +1,19 @@
+{
+  "dataset": "redial",
+  "source_train_file": "data/conv/redial/train_data_process.jsonl",
+  "construction": "unique entities per training conversation; every unordered pair increments co-mention count once per conversation; output is bidirectional",
+  "min_count": 2,
+  "paper_threshold_interpretation": "keep C_ij >= 2",
+  "num_train_conversations": 9005,
+  "num_nonempty_conversations": 9004,
+  "avg_unique_entities_per_conversation": 7.846862853970016,
+  "max_unique_entities_per_conversation": 31,
+  "all_unique_undirected_pairs_before_threshold": 148029,
+  "kept_undirected_edges": 32791,
+  "kept_directed_edges": 65582,
+  "nodes_with_at_least_one_edge": 3259,
+  "max_comention_count": 415,
+  "sum_kept_comention_weights_undirected": 156936,
+  "weighted_compat_directed_edge_entries": 313872,
+  "leakage_note": "Only training split is used; validation/test are not used."
+}

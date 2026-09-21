@@ -1,0 +1,38 @@
+# Stable baseline for MSCRS on Python 3.12.7.
+# Keep transformers on 4.x because this repo still imports AdamW from transformers.
+
+torch==2.4.1
+torch-geometric==2.6.1
+
+transformers==4.36.2
+tokenizers==0.15.2
+huggingface-hub==0.20.3
+safetensors==0.4.5
+sentencepiece==0.2.0
+
+accelerate==0.26.1
+
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+pandas==2.2.3
+
+tqdm==4.66.5
+loguru==0.7.2
+wandb==0.17.9
+protobuf==4.25.5
+
+nltk==3.9.1
+rouge==1.0.1
+
+packaging==24.2
+filelock==3.16.1
+regex==2024.9.11
+requests==2.32.3
+PyYAML==6.0.2
+
+# Optional PyG native extensions. Install only if torch-geometric asks for them
+# or if you need faster CUDA/CPU graph ops. The wheel URL must match your torch
+# and CUDA build, for example:
+#   CPU:       pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.4.0+cpu.html
+#   CUDA 12.1: pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
